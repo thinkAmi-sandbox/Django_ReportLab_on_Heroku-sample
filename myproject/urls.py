@@ -18,5 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', include('myapp.urls', 'pdf')),
+    url(r'^/', include('myapp.urls', 'pdf')),
+    url(r'^table/', include('table_style.urls', 'table')),
 ]
